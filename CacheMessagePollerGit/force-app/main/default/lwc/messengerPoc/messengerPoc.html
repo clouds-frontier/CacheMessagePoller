@@ -1,0 +1,18 @@
+<template  >
+
+
+    <lightning-card title="Testing messages" icon-name="custom:custom14" >
+      
+                <ul class="slds-list_ordered" >
+                    <template for:each={smsMessages} for:item="msg">
+                        <li key={msg.Id}>
+                            <a href={msg.URL__c}> {msg.Subject__c} </a>
+                            
+                        </li>
+                    </template>   
+                 
+                </ul>
+         
+        </lightning-card>
+           
+    </template>
