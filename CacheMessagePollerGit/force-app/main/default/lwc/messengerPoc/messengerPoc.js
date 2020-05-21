@@ -19,7 +19,7 @@ export default class MessengerPoc extends LightningElement {
     
               return refreshApex(this.wiredMessages);  
                 
-            }, 1000);
+            }, 15000);
           }
     
          else if (error) {
